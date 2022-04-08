@@ -8,6 +8,9 @@ fun main(){
 
     //Question three
     servesDrinks()
+
+    //Question four
+    fizzbuzz()
 }
 //a function that prints out all the odd numbers between 1 and 200
 fun oddNumbers(){
@@ -52,6 +55,21 @@ fun servesDrinks(){
 //multiple of 3, print "Fizz" instead of the number. For each multiple of 5, print
 //"Buzz" instead of the number. For numbers which are multiples of both 3 and
 //5, print "FizzBuzz" instead of the number
+fun fizzbuzz(){
+    for (num in 1..100){
+        if (num%3==0 || num%5==0){
+            println("Fizz")
+        }
+        else if (num%3==0 &&num%5==0){
+            println("FizzBuzz")
+        }
+        else {
+            println(num)
+        }
+
+    }
+}
+
 
 
 
